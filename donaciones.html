@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones - Orzion Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="donations-container">
+        <div class="donations-content">
+            <button onclick="goBack()" style="position: absolute; top: 2rem; left: 2rem; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">←</button>
+
+            <h1>Apoya el desarrollo de Orzion Pro</h1>
+            <p style="margin: 2rem 0; color: #ccc;">Tu apoyo nos ayuda a mantener y mejorar Orzion Pro. Cada donación es muy apreciada.</p>
+
+            <div style="margin: 3rem 0;">
+                <h3>Donaciones via PayPal</h3>
+                <p style="color: #999; margin: 1rem 0;">Puedes hacer una donación segura a través de PayPal:</p>
+
+                <!-- QR Code for PayPal -->
+                <div class="qr-container" style="margin: 2rem 0;">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://paypal.me/orzattystudios" alt="QR Code para donaciones PayPal" style="border: 2px solid white; border-radius: 10px;">
+                    <p style="margin-top: 1rem; color: #ccc;">Escanea el código QR con tu móvil</p>
+                </div>
+
+                <!-- PayPal Button -->
+                <a href="https://paypal.me/orzattystudios" target="_blank" class="paypal-button" style="text-decoration: none;">
+                    💳 Donar con PayPal
+                </a>
+
+                <p style="color: #666; font-size: 0.9rem; margin-top: 2rem;">
+                    Email de contacto: orzattydavid@gmail.com<br>
+                    PayPal: paypal.me/orzattystudios
+                </p>
+            </div>
+
+            <div style="margin: 3rem 0; padding: 2rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                <h3>¿Por qué donar?</h3>
+                <ul style="text-align: left; color: #ccc; margin: 1rem 0;">
+                    <li>Mantener los servidores funcionando</li>
+                    <li>Desarrollo de nuevas características</li>
+                    <li>Mejorar el rendimiento de la IA</li>
+                    <li>Soporte técnico continuo</li>
+                </ul>
+            </div>
+
+            <p style="color: #4ecdc4; font-weight: 600;">¡Gracias por tu apoyo!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

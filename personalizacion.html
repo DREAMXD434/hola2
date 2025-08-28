@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalización - Orzion Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="settings-container">
+        <button onclick="goBack()" style="position: absolute; top: 2rem; left: 2rem; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer;">←</button>
+        
+        <div class="settings-header">
+            <h1>Personalización del Bot</h1>
+        </div>
+        
+        <div class="settings-grid">
+            <!-- Memoria -->
+            <div class="settings-item">
+                <div>
+                    <div style="font-weight: 600;">🧠 Memoria</div>
+                    <div style="color: #999; font-size: 0.9rem;">Configurar memoria del bot</div>
+                </div>
+                <div style="margin-left: auto;">→</div>
+            </div>
+            
+            <!-- Instrucciones Personalizadas -->
+            <div class="settings-item">
+                <div>
+                    <div style="font-weight: 600;">📝 Instrucciones Personalizadas</div>
+                    <div style="color: #999; font-size: 0.9rem;">Personalizar comportamiento</div>
+                </div>
+                <div style="margin-left: auto;">→</div>
+            </div>
+            
+            <!-- Esquemas de Color -->
+            <div class="settings-item">
+                <div>
+                    <div style="font-weight: 600;">🎨 Esquemas de Color</div>
+                    <div style="color: #999; font-size: 0.9rem;">Tema oscuro (actual)</div>
+                </div>
+                <div style="margin-left: auto;">
+                    <select style="background: #333; color: white; border: 1px solid #555; border-radius: 5px; padding: 0.3rem;">
+                        <option>Oscuro</option>
+                        <option>Claro</option>
+                        <option>Sistema</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Cambiar Idioma -->
+            <div class="settings-item">
+                <div>
+                    <div style="font-weight: 600;">🌐 Cambiar Idioma</div>
+                    <div style="color: #999; font-size: 0.9rem;">Español (actual)</div>
+                </div>
+                <div style="margin-left: auto;">
+                    <select style="background: #333; color: white; border: 1px solid #555; border-radius: 5px; padding: 0.3rem;">
+                        <option>Español</option>
+                        <option>English</option>
+                        <option>Français</option>
+                        <option>Português</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

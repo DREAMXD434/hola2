@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Orzion Pro</title>
+    <meta name="description" content="Chat con IA Multimodal de 638B Parámetros">
+    <meta name="theme-color" content="#4ecdc4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Orzion Pro">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <button class="menu-button" onclick="toggleSidebar()">☰</button>
+            <button class="donate-header-btn" onclick="openDonations()">☕ Invítame un café</button>
+            <button class="new-chat-button" onclick="newChat()">💬</button>
+        </div>
+        
+        <div class="chat-main">
+            <div class="chat-welcome">
+                ¿En qué puedo ayudarte?
+            </div>
+            <div id="chatMessages" class="chat-messages" style="display: none;"></div>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="input-tools">
+                <button class="tool-button thinking-btn" onclick="toggleThinkingMode()" title="Modo Pensamiento - Click para activar/desactivar">
+                    🤔 Thinking
+                </button>
+            </div>
+            <div class="input-wrapper">
+                <button class="attach-button" onclick="handleFileUpload()" title="Subir archivo">📎</button>
+                <textarea id="chatInput" class="chat-input" placeholder="Pregunta lo que quieras" rows="1"></textarea>
+                <button id="sendBtn" class="send-button" onclick="sendMessage()" title="Enviar mensaje">➤</button>
+                <button id="stopBtn" class="stop-button" onclick="stopGeneration()" style="display: none;" title="Detener generación">⏹</button>
+            </div>
+            <input type="file" id="fileInput" style="display: none;" accept="image/*,.txt,.pdf,.doc,.docx">
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Menú</h3>
+            <button onclick="closeSidebar()" style="background: none; border: none; color: white; font-size: 1.2rem;">×</button>
+        </div>
+        <div class="sidebar-content">
+            <button class="sidebar-item" onclick="newChat()">➕ Nuevo Chat</button>
+            <div class="chat-history-header">📝 Historial de Chats</div>
+            <div class="chat-history"></div>
+            <button class="sidebar-item" onclick="openSettings()">⚙️ Configuraciones</button>
+        </div>
+    </div>
+    
+    <div id="overlay" class="overlay" onclick="closeSidebar()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
