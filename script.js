@@ -1,5 +1,5 @@
 // API Configuration
-const API_KEY = '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';
+const API_KEY = '';
 const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
 
 // Bot Dataset
